@@ -90,8 +90,6 @@ Z
 X
 (src/main/webapp/WEB-INF/view/orm/orm.jsp,a\b\ab3e0794f06ae0fea1b9a76e38eb3e547e03bcf5
 V
-&src/main/webapp/WEB-INF/view/index.jsp,8\1\817c880c4d926d2f6cccffcf363ea7a5508a4e7e
-V
 &src/main/webapp/WEB-INF/view/about.jsp,e\e\ee2a93b614529ce56b0d1976676ab18f78c4b495
 a
 1src/main/webapp/WEB-INF/tags/angular-template.tag,0\3\0340f8206068a080c611f2c9c5c746bc8a76235c
@@ -244,3 +242,9 @@ c
 3src/main/java/spring/javaconfig/WebInitializer.java,f\0\f01d60133facaa12f9d5212c00c62da5cdbf1500
 w
 Gsrc/main/java/spring/mvc/dependency/injection/WordpressPostService.java,7\8\7838cbbab3fbd19239f483f2ae1df2b43d543e6d
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+V
+&src/main/webapp/WEB-INF/view/index.jsp,8\1\817c880c4d926d2f6cccffcf363ea7a5508a4e7e
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
