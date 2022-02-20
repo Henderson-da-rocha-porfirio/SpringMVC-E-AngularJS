@@ -1,0 +1,83 @@
+Script1: JavaScript Object
+
+var udemyCourseObject = {
+ title: 'Java Spring MVC Framework with AngularJS by Google and HTML5',
+ instructor: 'Tuna Tore'
+};
+
+var jsonUdemyCourseObject = JSON.stringify(udemyCourseObject);
+
+var udemyCourseObjectParsed = JSON.parse(jsonUdemyCourseObject);
+document.getElementById("resultParse").innerHTML = udemyCourseObjectParsed.title;
+ 		
+Result1: JSON.stringify(udemyCourseObject)
+{
+  "title": "Java Spring MVC Framework with AngularJS by Google and HTML5",
+  "instructor": "Tuna Tore"
+}
+Result1: JSON.parse(jsonUdemyCourseObject)
+Java Spring MVC Framework with AngularJS by Google and HTML5
+ 
+Script2: JavaScript Array
+
+var array = ['Java Spring MVC', 'REST', 'JDBCTemplate', 'Maven', true, 2, false];
+var jsonArray = JSON.stringify(array,null,2);
+document.getElementById("resultArray").innerHTML = jsonArray;
+
+var arrayParsed = JSON.parse(jsonArray);
+document.getElementById("resultArrayParse").innerHTML = arrayParsed[0];
+ 		
+Result2: JSON.stringify(array)
+[
+  "Java Spring MVC",
+  "REST",
+  "JDBCTemplate",
+  "Maven",
+  true,
+  2,
+  false
+]
+Result2: JSON.parse(jsonArray) arrayParsed[0]
+Java Spring MVC
+ 
+Script3: JavaScript Array with Objects
+	
+var arrayObjects = {
+		udemyCourses: [
+			{ title:'Java Spring MVC Framework with AngularJS by Google and HTML5', instructor: 'Tuna Tore' },
+			{ title:'Java Spring Framework 4 and Core Spring Certification', instructor: 'Tuna Tore' }
+			]
+		};
+document.getElementById("arrayObjects").innerHTML = JSON.stringify(arrayObjects,null,2);
+document.getElementById("arrayObjects2").innerHTML = arrayObjects.udemyCourses[1].title;
+ 		
+Result3:JSON.stringify(arrayObjects)
+{
+  "udemyCourses": [
+    {
+      "title": "Java Spring MVC Framework with AngularJS by Google and HTML5",
+      "instructor": "Tuna Tore"
+    },
+    {
+      "title": "Java Spring Framework 4 and Core Spring Certification",
+      "instructor": "Tuna Tore"
+    }
+  ]
+}
+Result3: arrayObjects.udemyCourses[1].title
+Java Spring Framework 4 and Core Spring Certification
+ 
+Script4: JavaScript Nested Objects
+	
+var udemyCourse = {
+		  title:  'Java Spring Framework 4 and Core Spring Certification',
+		  instructor: 'Tuna Tore',
+		  information: {
+		    students: 204,
+		    promo: 'https://www.udemy.com/spring-framework-4-course-and-core-spring-certification/',		    
+		  }
+};
+document.getElementById("nestedObjects").innerHTML = udemyCourse.information.students;
+ 		
+Result4: Nested Objects udemyCourse.information.students
+204
